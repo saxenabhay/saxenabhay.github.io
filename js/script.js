@@ -3,16 +3,19 @@ const modev = document.getElementById('mode');
 const menub = document.querySelector('#menub input[type="button"]');
 const closeb = document.querySelector('#closeich input[type="button"]');
 let navborState = true; //false- border not visible
+
 window.addEventListener("scroll", function(){
     scrollTest(false);
 });
 document.addEventListener("DOMContentLoaded", windowLoaded);
+
 toggleSwitch.addEventListener('change', switchTheme, false);
+
 menub.addEventListener('click', function(){
     menutog(true);
 });
 closeb.addEventListener('click', function(){
-    menutog(true);
+    menutog(false);
 });
 
 
