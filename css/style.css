@@ -144,6 +144,14 @@ html, body{
     user-select: none;
     transition: background-color ease-in-out 0.1s, transform ease-in-out 0.2s;
 }
+input,
+textarea,
+button,
+select,
+a, label{
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
 #menub{
     display: none;
 }
@@ -299,6 +307,7 @@ html, body{
     font-size:2.3rem;
     font-weight: 600;
     padding:2rem 4rem;
+    padding-bottom: 0.7rem;
     width: fit-content;
     display: block;
     max-width: 40rem;
@@ -306,7 +315,7 @@ html, body{
 .dt{
     font-size:1.3rem;
     font-weight: 600;
-    padding:2rem 4rem;
+    padding:0 4rem;
     color:var(--blue-tx);
     width: fit-content;
     display: block;
