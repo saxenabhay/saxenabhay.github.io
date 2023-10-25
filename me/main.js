@@ -54,25 +54,8 @@ setTimeout(function() {
 }, 3000);
 setTimeout(function() {
 	document.getElementById('one').style.transform = "translate(0px , 100vh)";
-	document.getElementById('time').style.opacity = "1";
 	document.getElementById('credit').style.opacity = "1";
-	var currentTime = new Date()
-	var hours = currentTime.getHours()
-	var minutes = currentTime.getMinutes()
-	if (minutes < 10) {
-		minutes = "0" + minutes
-	}
-	document.getElementById('time').innerHTML = hours + ":" + minutes + " ";
 }, 5000);
-setInterval(function() {
-	var currentTime = new Date()
-	var hours = currentTime.getHours()
-	var minutes = currentTime.getMinutes()
-	if (minutes < 10) {
-		minutes = "0" + minutes
-	}
-	document.getElementById('time').innerHTML = hours + ":" + minutes + " ";
-}, 60000)
 /*nature*/
 var n = 2;
 var np = 0;
@@ -93,7 +76,7 @@ function Nature() {
 					nt = -2;
 				}
 				if (nt == -2) {
-					sound.src = "sound/" + Math.floor((Math.random() * 4) + 1) + ".mp3";
+					sound.src = "sound/inter.ogg";
 					sound.play();
 					nl++;
 				}
@@ -111,11 +94,11 @@ function Nature() {
 					}
 					/*storage*/
 					sound.pause();
-					sound.src = "sound/f.mp3";
+					sound.src = "sound/end.ogg";
 					sound.play();
 					Stop(3);
 					end = setInterval(function() {
-						sound.src = "sound/f.mp3";
+						sound.src = "sound/end.ogg";
 						sound.play();
 					}, 28000);
 				}
@@ -151,17 +134,17 @@ function Ocean() {
 		o = 1;
 		oi = setInterval(function() {
 			if (op == 0) {
-				if (ot < 10) {
+				if (ot < 60) {
 					ot++;
 				} else {
 					ot = -2;
 				}
 				if (ot == -2) {
-					sound.src = "sound/" + Math.floor((Math.random() * 4) + 1) + ".mp3";
+					sound.src = "sound/inter.ogg";
 					sound.play();
 					ol++;
 				}
-				if (ol > 40) {
+				if (ol > 30) {
 					/*storage*/
 					var lastplayedten = new Date(localStorage.getItem("10lastplay"));
 					if ((lastplayedten.getDate() == datetoday - 1) && (lastplayedten.getMonth() == month) || (lastplayedten.getMonth() == month - 1)) {
@@ -175,16 +158,16 @@ function Ocean() {
 					}
 					/*storage*/
 					sound.pause();
-					sound.src = "sound/f.mp3";
+					sound.src = "sound/end.ogg";
 					sound.play();
 					Stop(3);
 					end = setInterval(function() {
-						sound.src = "sound/f.mp3";
+						sound.src = "sound/end.ogg";
 						sound.play();
 					}, 28000);
 				}
-				document.getElementById('tim1').innerHTML = ot + "/10s";
-				document.getElementById('lap1').innerHTML = ol + "/40";
+				document.getElementById('tim1').innerHTML = ot + "/60s";
+				document.getElementById('lap1').innerHTML = ol + "/30";
 			}
 		}, 1000);
 	}
@@ -225,17 +208,17 @@ function Sky() {
 					st = -2;
 				}
 				if (st == -2) {
-					sound.src = "sound/" + Math.floor((Math.random() * 4) + 1) + ".mp3";
+					sound.src = "sound/inter.ogg";
 					sound.play();
 					sl++;
 				}
 				if (sl > sil) {
 					sound.pause();
-					sound.src = "sound/f.mp3";
+					sound.src = "sound/end.ogg";
 					sound.play();
 					Stop(3);
 					end = setInterval(function() {
-						sound.src = "sound/f.mp3";
+						sound.src = "sound/end.ogg";
 						sound.play();
 					}, 28000);
 				}
@@ -279,8 +262,8 @@ function Stop(stp) {
 	n = 2;
 	o = 2;
 	s = 2;
-	document.getElementById('tim1').innerHTML = "0/10s";
-	document.getElementById('lap1').innerHTML = "0/40";
+	document.getElementById('tim1').innerHTML = "0/60s";
+	document.getElementById('lap1').innerHTML = "0/30";
 	document.getElementById('circletimer2').style.background = "rgba(255, 255, 255, 0)";
 	document.getElementById('circletimer1').style.color = "black";
 	clearInterval(si);
