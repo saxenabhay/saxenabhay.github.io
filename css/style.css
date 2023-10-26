@@ -362,27 +362,41 @@ a, label{
     letter-spacing: 0.1rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.3rem;
+    line-height: 2.3rem;
 }
+
 #footer a, #fouro input[type=button], #fouro a{
+    background: none;
+    outline: inherit;
+    appearance: none;
     background-color: var(--bg-b);
-    padding:0.4rem;
     display: inline !important;
-    border-radius: 0.5rem;
     color:var(--blue-tx);
     text-decoration:none;
     box-shadow: var(--blue-tx) 0.09375rem 0.09375rem;
     border: none;
     cursor: pointer;
     font-size: inherit;
-    margin: none;
     font-family: inherit;
+    padding:0.4rem;
     font-weight: inherit !important;
-}
-#fouro{
-    height:100vh;
-    line-height: 5.1rem;
+    border-radius: 0.4rem;
 }
 
+#fouro{
+    line-height:4.1rem;
+    padding: none !important;
+    flex: 1 1 auto;
+}
+#megaflex #footer{
+    flex: 0 1 auto;
+}
+#megaflex{
+    height:100%;
+    display: flex;
+    flex-flow: column;
+    background-color: #111;
+}
 
 @media only screen and (max-width:1340px) {
     .cc, .dt, .tt{
