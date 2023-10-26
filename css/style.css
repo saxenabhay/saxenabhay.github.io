@@ -363,13 +363,24 @@ a, label{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.3rem;
 }
-#footer a{
+#footer a, #fouro input[type=button], #fouro a{
     background-color: var(--bg-b);
     padding:0.4rem;
-    display: inline-block;
+    display: inline !important;
     border-radius: 0.5rem;
     color:var(--blue-tx);
     text-decoration:none;
+    box-shadow: var(--blue-tx) 0.09375rem 0.09375rem;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    margin: none;
+    font-family: inherit;
+    font-weight: inherit !important;
+}
+#fouro{
+    height:100vh;
+    line-height: 5.1rem;
 }
 
 
