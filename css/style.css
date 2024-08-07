@@ -45,8 +45,8 @@
     background-size: cover;
     filter: var(--icon-br);
 }
-#cvico{
-    background-image: url(../logos/cv.svg);
+#resumeico{
+    background-image: url(../logos/resume.svg);
 }
 #gitic{
     background-image: url(../logos/github.svg);
@@ -259,7 +259,7 @@ a, label{
     background-size:160% 1px; 
     transition: background ease-in-out 0.2s;
 }
-#intrcv{
+#intrresume{
     margin-top: 4.5rem;
     margin-left: -1.25rem;
 }
