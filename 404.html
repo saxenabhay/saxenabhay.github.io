@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Page not Found</title>
         <script src="/js/preload.js"></script>
@@ -14,61 +15,20 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css?version=1.0.3">
     </head>
-    <body>
-        <div id="nav">
-            <label id="menub">
-                <input type ="button" value="menu" title="menu">
-                <span class="ico" id="menuic"></span>
-            </label>
-            <a id="icholder" href="https://saxenabhay.github.io"><span id="icon"></span></a>
-            <div id="navrightchild">
-                <div id="close">
-                    <label id="closeich">
-                        <input type ="button" value="close" title="close">
-                        <span class="ico" id="closeic"></span>
-                    </label>
-                </div>
-                <a class="nrb" href="/files/resume.pdf" target="_blank">
-                    <span class="ico" id="resumeico"></span>
-                    <span class="textnav">resume</span>
-                </a>
-                <a class="nrb" href="https://github.com/saxenabhay" target="_blank">
-                    <span class="ico" id="gitic"></span>
-                    <span class="textnav">Github</span>
-                </a>
-                <a class="nrb" href="https://www.linkedin.com/in/saxenabhay/" target="_blank">
-                    <span class="ico" id="linkedic"></span>
-                    <span class="textnav">LinkedIn</span>
-                </a>
-                <div id="modehold" class="theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" title="colormode"/>
-                    <span id="mode">
-                        <span id="modeic" class="ico"></span>
-                    </span>
-                    </label>
-                </div>
-            </div>
+    <body style="display: flex;justify-content: center;align-items:center;">
+        <div style="max-width: 40rem;padding:4rem 2rem;">
+            <h1>
+                There has been a glitch...
+            </h1>
+            <span>
+                Not sure what you are looking for . You can 
+                <input
+                action="action"
+                onclick="window.history.go(-1); return false;"
+                type="button"
+                value="go back" />
+                or try finding from the <a href="/index.html">home page</a>
+            </span>
         </div>
-        <div id="megaflex">
-            <div id="fouro" class="a">
-                <div class="vertflex rightflex">
-                    <span class="tt">
-                        There has been a glitch...
-                    </span>
-                    <span class="cc">
-                        Not sure what you are looking for . You can 
-                        <input
-                        action="action"
-                        onclick="window.history.go(-1); return false;"
-                        type="button"
-                        value="go back" />
-                        or try finding from the <a href="/index.html">home page</a>
-                    </span>
-                </div>
-            </div>
-            <div id="footer"><a href="https://github.com/saxenabhay/saxenabhay.github.io" target="_blank">Hand-Coded</a> and Designed with Passion</div>
-        </div>
-        <script src="/js/script.js?version=1.0.0"></script>
     </body>
 </html>
