@@ -1,10 +1,10 @@
 title: Abhay Saxena
+email: as21ms086@iiserkol.ac.in
+# This description appears if a page doesn't have a specific one
 description: "BS-MS Dual Degree Student in Physics at IISER Kolkata. Researching Ultrafast Terahertz Spectroscopy and Spintronics."
 url: "https://saxenabhay.github.io"
 theme: null
 markdown: kramdown
 permalink: /:title/
-
-# This helps Google find your pages
 plugins:
   - jekyll-sitemap

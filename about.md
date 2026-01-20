@@ -2,6 +2,7 @@
 layout: default
 title: About Me
 permalink: /about/
+description: "Academic Portfolio and CV of Abhay Saxena, BS-MS student at IISER Kolkata. Projects: Terahertz Spectroscopy, FMR, Topological insulators and Quantum Computing."
 ---
 
 <div style="text-align:center; margin-bottom: 3rem;">
@@ -9,7 +10,7 @@ permalink: /about/
     <span id="description">BS-MS Student<br>Physical Sciences<br>IISER Kolkata</span>
     <span id="mail" style="margin-top:0.5rem;">as21ms086 [at] iiserkol.ac.in</span>
     <br>
-    <a href="/files/resume.pdf" target="_blank" style="font-size:0.9rem;">[Download Full PDF]</a>
+    [Download Full Curriculum Vitae (PDF)](/files/resume.pdf)
 </div>
 
 ## Education
