@@ -2,12 +2,19 @@
 layout: default
 title: Scientific Notes
 description: "Research notes and updates on Ultrafast Spectroscopy, Python for Physics, and Condensed Matter experiments by Abhay Saxena."
+hide_title: false
 ---
 
+<div style="margin-bottom: 2rem;">
+    <input type="text" id="search-box" placeholder="Search notes (e.g., 'terahertz', 'python')..." 
+    style="width: 100%; padding: 0.8rem; font-family: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 4px; box-sizing: border-box;">
+</div>
 
 <hr style="margin-bottom: 2rem; opacity: 0.2;">
 
-<ul>
+<ul id="search-results" style="display: none; padding-left: 0;"></ul>
+
+<ul id="default-list" style="padding-left: 0;">
   {% for post in site.posts %}
     <li style="margin-bottom: 2rem; list-style: none;">
       <span style="font-family: 'Courier New'; opacity: 0.6; font-size: 0.9rem;">{{ post.date | date: "%B %d, %Y" }}</span>
@@ -17,3 +24,5 @@ description: "Research notes and updates on Ultrafast Spectroscopy, Python for P
     </li>
   {% endfor %}
 </ul>
+
+<script src="/assets/js/search.js"></script>
