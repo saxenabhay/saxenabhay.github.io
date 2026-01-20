@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Correcting Phase Shifts in THz-TDS (dummy blog)"
 date: 2026-01-20
 ---

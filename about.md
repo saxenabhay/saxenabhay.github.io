@@ -9,7 +9,7 @@ permalink: /about/
     <span id="description">BS-MS Student<br>Physical Sciences<br>IISER Kolkata</span>
     <span id="mail" style="margin-top:0.5rem;">as21ms086 [at] iiserkol.ac.in</span>
     <br>
-    <a href="/files/resume.pdf" target="_blank" style="font-size:0.9rem;">[Download PDF Version]</a>
+    <a href="/files/resume.pdf" target="_blank" style="font-size:0.9rem;">[Download Full PDF]</a>
 </div>
 
 ## Education
