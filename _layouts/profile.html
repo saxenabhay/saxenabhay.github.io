@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png">
+    <script src="/assets/js/preload.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax = { tex: { inlineMath: [['$', '$']] } };</script>
+</head>
+<body>
+    <div id="flexall">
+        <div id="side">
+            <span id="dp"><img src="/assets/images/prof_pic.jpg" alt="Abhay"></span>
+            <span id="title">ABHAY SAXENA</span>
+            <span id="description">BS-MS Student<br>Physical Sciences<br>IISER Kolkata</span>
+            <span id="mail">as21ms086 [at] iiserkol.ac.in</span>
+            <div id="buttonholder">
+                <div id="subbuttonholder">
+                    <a class="nrb" href="/"><span class="ico" id="webic"></span><span class="textnav">Blog</span></a>
+                    <a class="nrb" href="/files/resume.pdf" target="_blank"><span class="ico" id="resumeico"></span><span class="textnav">Resume</span></a>
+                </div>
+                <div id="subbuttonholder">
+                    <a class="nrb" href="https://github.com/saxenabhay"><span class="ico" id="gitic"></span><span class="textnav">Github</span></a>
+                    <a class="nrb" href="https://linkedin.com/in/saxenabhay"><span class="ico" id="linkedic"></span><span class="textnav">LinkedIn</span></a>
+                    <div id="modehold" class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <a class="nrb"><span id="modeic" class="ico"></span><span class="textnav">Theme</span></a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            {{ content }}
+        </div>
+    </div>
+    <div id="footer">Updated {{ "now" | date: "%B %Y" }}. <script src="/assets/js/script.js"></script></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png">
+    <script src="/assets/js/preload.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>MathJax = { tex: { inlineMath: [['$', '$']] } };</script>
+    <style>
+        /* Center the blog content */
+        #flexall { justify-content: center; }
+        #content { max-width: 50rem; width: 100%; border-left: none; }
+        .nav-header { text-align: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+    </style>
+</head>
+<body>
+    <div id="flexall">
+        <div id="content">
+            <div class="nav-header">
+                <a href="/"><b>Blog</b></a> &nbsp;|&nbsp; 
+                <a href="/about"><b>About & CV</b></a> &nbsp;|&nbsp; 
+                <label class="theme-switch" for="checkbox" style="display:inline-block; vertical-align:middle;">
+                    <input type="checkbox" id="checkbox" />
+                    <span id="modeic" class="ico" style="cursor:pointer;"></span>
+                </label>
+            </div>
+            
+            <h1>{{ page.title }}</h1>
+            {% if page.date %}
+            <p style="opacity:0.7; font-size:0.9rem;">{{ page.date | date: "%B %d, %Y" }}</p>
+            {% endif %}
+            
+            {{ content }}
+            
+        </div>
+    </div>
+    <div id="footer"><script src="/assets/js/script.js"></script></div>
+</body>
+</html>
