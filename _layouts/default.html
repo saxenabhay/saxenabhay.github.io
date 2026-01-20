@@ -69,7 +69,20 @@
         </div>
 
         <div id="content">
+            
+            {% if page.title and page.hide_title != true %}
+                <h1 style="margin-bottom: 0.5rem;">{{ page.title }}</h1>
+            {% endif %}
+
+            {% if page.date %}
+                <p style="opacity: 0.6; font-size: 0.95rem; margin-top: 0; margin-bottom: 2rem; display: flex; align-items: center;">
+                    <span id="dateic" class="ico" style="margin-right: 0.5rem; width: 1.2rem; height: 1.2rem;"></span> 
+                    {{ page.date | date: "%B %d, %Y" }}
+                </p>
+            {% endif %}
+
             {{ content }}
+            
         </div>
     </div>
     <div id="footer">Updated {{ "now" | date: "%B %Y" }}. <script src="/assets/js/script.js"></script></div>
