@@ -4,7 +4,10 @@ title: Blog Posts
 description: "Personal Blog along with Research notes and updates on Ultrafast Spectroscopy, Python for Physics, and Condensed Matter experiments by Abhay Saxena."
 hide_title: false
 ---
-Hi there, welcome to my Portfolio! Currently moving some bits from here to there trying to migrate to Jekyll for content management part and hence my blog posts and most contents are gone temporarily. Hopefully would be fixed shortly, if I get the time. Until then, you cana checkout my resume at [About me](https://saxenabhay.github.io/about/).
+Hi there, welcome to my portfolio!
+I'm currently in the process of migrating my site to Jekyll for better content management, so some blog posts and sections are temporarily unavailable.
+
+I’m working on restoring everything soon (as time permits!). Until then, feel free to check out my resume on the [About Me page](https://saxenabhay.github.io/about/).
 
 
 <div style="margin-bottom: 2rem;">
