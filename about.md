@@ -10,7 +10,7 @@ description: "Academic Portfolio and CV of Abhay Saxena, BS-MS student at IISER 
     <span id="description">BS-MS Student<br>Physical Sciences<br>IISER Kolkata</span>
     <span id="mail" style="margin-top:0.5rem;">as21ms086 [at] iiserkol.ac.in</span>
     <br>
-    [Download Full Curriculum Vitae (PDF)](/files/resume.pdf)
+    <a href="/files/resume.pdf" target="_blank" style="font-size:0.9rem;">[Download Full Resume PDF]</a>
 </div>
 
 ## Education
