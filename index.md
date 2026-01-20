@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Scientific Notes
+title: Blog Posts
 description: "Research notes and updates on Ultrafast Spectroscopy, Python for Physics, and Condensed Matter experiments by Abhay Saxena."
 hide_title: false
 ---
