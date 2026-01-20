@@ -37,52 +37,32 @@
     background-size: cover;
     filter: var(--icon-br);
 }
-#resumeico{
-    background-image: url(../logos/resume.svg);
-}
-#gitic{
-    background-image: url(../logos/github.svg);
-}
-#modeic{
-    background-image: var(--themebt);
-}
-#linkedic{
-    background-image: url(../logos/linkedin.svg);
-}
-#menuic{
-    background-image: url(../logos/menu.svg);
-}
-#closeic{
-    background-image: url(../logos/close.svg);
-}
-#rptic{
-    background-image: url(../logos/report.svg);
-}
-#presic{
-    background-image: url(../logos/present.svg);
-}
-#andic{
-    background-image: url(../logos/android.svg);
-}
-#webic{
-    background-image: url(../logos/web.svg);
-}
-#music{
-    background-image: url(../logos/music.svg);
-}
-#date{
-    background-image: url(../logos/date.svg);
-}
+/* Use /assets/logos/ so these work from ANY page */
+#resumeico { background-image: url(/assets/logos/resume.svg); }
+#gitic     { background-image: url(/assets/logos/github.svg); }
+#modeic    { background-image: var(--themebt); }
+#linkedic  { background-image: url(/assets/logos/linkedin.svg); }
+#menuic    { background-image: url(/assets/logos/menu.svg); }
+#closeic   { background-image: url(/assets/logos/close.svg); }
+#rptic     { background-image: url(/assets/logos/report.svg); }
+#presic    { background-image: url(/assets/logos/present.svg); }
+#andic     { background-image: url(/assets/logos/android.svg); }
+#webic     { background-image: url(/assets/logos/web.svg); }
+#music     { background-image: url(/assets/logos/music.svg); }
+#dateic    { background-image: url(/assets/logos/date.svg); }
 
-html, body{
-    margin:0;
+html, body {
+    margin: 0;
     background-color: var(--bg);
-    color:var(--text);
-    font-family: Optimistic Text,-apple-system,ui-sans-serif,
-    system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,
-    Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji, 'Open Sans';
+    color: var(--text);
+    font-family: Optimistic Text, -apple-system, ui-sans-serif, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji, 'Open Sans';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    /* NEW STICKY FOOTER RULES */
+    min-height: 100vh;      
+    display: flex;          
+    flex-direction: column; 
 }
 
 #dp{
@@ -227,6 +207,7 @@ a, label{
     text-align:center;
     justify-content: center;
     align-items: flex-start;
+    flex: 1;
 }
 
 #footer{
@@ -234,6 +215,9 @@ a, label{
     padding:0.5rem;
     display:block;
     text-align: center;
+
+    flex-shrink: 0; 
+    margin-top: auto; /* Extra safety to push it down */
 }
 a{
     text-decoration: none;
