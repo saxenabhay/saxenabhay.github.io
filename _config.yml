@@ -1,6 +1,10 @@
 title: Abhay Saxena
-description: Physics Student at IISER Kolkata
+description: "BS-MS Dual Degree Student in Physics at IISER Kolkata. Researching Ultrafast Terahertz Spectroscopy and Spintronics."
 url: "https://saxenabhay.github.io"
 theme: null
 markdown: kramdown
 permalink: /:title/
+
+# This helps Google find your pages
+plugins:
+  - jekyll-sitemap
