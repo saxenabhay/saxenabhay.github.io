@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Blog Posts
-description: "Research notes and updates on Ultrafast Spectroscopy, Python for Physics, and Condensed Matter experiments by Abhay Saxena."
+description: "Personal Blog along with Research notes and updates on Ultrafast Spectroscopy, Python for Physics, and Condensed Matter experiments by Abhay Saxena."
 hide_title: false
 ---
+Hi there, welcome to my Portfolio! Currently moving some bits from here to there trying to migrate to Jekyll for content management part and hence my blog posts and most contents are gone temporarily. Hopefully would be fixed shortly, if I get the time. Until then, you cana checkout my resume at [About me](https://saxenabhay.github.io/about/).
+
 
 <div style="margin-bottom: 2rem;">
     <input type="text" id="search-box" placeholder="Search notes (e.g., 'terahertz', 'python')..." 
